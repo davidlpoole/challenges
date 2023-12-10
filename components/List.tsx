@@ -4,5 +4,9 @@ interface ListProps {
 }
 
 export default function List(props: ListProps) {
-  return <div>{props.name}: {props.list.join(", ")}</div>;
+  return (
+    <div class="my-2">
+      {props.name}: {props.list.length > 0 ? props.list.join(", ") : "..."}
+    </div>
+  );
 }

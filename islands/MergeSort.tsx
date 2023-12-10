@@ -9,7 +9,11 @@ export default function MergeSort() {
   const sorted = mergeSort(unsorted.value);
   return (
     <>
-      <TextInput text={text} list={unsorted} />
+      <TextInput
+        text={text}
+        list={unsorted}
+        placeholder="Type a number"
+      />
       <List name="Unsorted numbers" list={unsorted.value} />
       <List name="Sorted numbers" list={sorted} />
     </>

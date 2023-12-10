@@ -5,6 +5,7 @@ import { Button } from "../components/Button.tsx";
 interface TextInputProps {
   text: Signal<string>;
   list: Signal<number[]>;
+  placeholder: string;
 }
 
 export default function TextInput(props: TextInputProps) {
@@ -15,14 +16,12 @@ export default function TextInput(props: TextInputProps) {
   }
   return (
     <>
-      <div>
-        Add a number to the unsorted list
-      </div>
       <form class="flex gap-2 py-6" onSubmit={(e) => handleSubmit(e)}>
         <input
           id="addNumber"
           class="px-2 py-1 border-gray-500 border-2 rounded bg-white hover:bg-gray-200 transition-colors"
           type="number"
+          placeholder={props.placeholder}
           required
           value={props.text.value}
           onChange={(e) =>
