@@ -18,7 +18,7 @@ export default function Home() {
       <div class="px-4 py-8 mx-auto">
         <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center pb-6 gap-2">
           <LinkButton
-            href="https://github.com/davidlpoole/"
+            href="https://davidpoole.deno.dev"
             target="_blank"
           >
             <svg
