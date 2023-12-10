@@ -1,7 +1,4 @@
 import MergeSort from "../islands/MergeSort.tsx";
-import { emojify } from "npm:node-emoji@2";
-
-console.log(emojify(":t-rex: :heart: NPM"));
 
 export default function Home() {
   return (
@@ -15,8 +12,7 @@ export default function Home() {
       <div class="px-4 py-8 mx-auto">
         <pre class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
       <code>
-        {`
-export default function mergeSort(unsorted: number[]): number[] {
+        {`export default function mergeSort(unsorted: number[]): number[] {
   if (unsorted.length <= 1) return unsorted;
 
   const splitIndex = Math.floor(unsorted.length / 2);
