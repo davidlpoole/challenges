@@ -28,7 +28,7 @@ export default function NewEmployee(props: NewEmployeeProps) {
 
   return (
     <>
-      <form class="flex gap-2 py-6" onSubmit={(e) => handleSubmit(e)}>
+      <form class="flex gap-2 py-6 flex-wrap" onSubmit={(e) => handleSubmit(e)}>
         <FormInput
           name="firstName"
           placeholder="First name"

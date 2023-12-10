@@ -20,16 +20,19 @@ export default function Home() {
           <p class="text-2xl pt-6">Example</p>
           <p class="mt-2">
             The following form passes the entered employee data to a factory
-            function which creates a new Employee object, including computed
+            function which creates a new Employee object, including derived
             properties like full name and email address.
           </p>
           <Factory />
         </div>
       </div>
       <div class="px-4 py-8 mx-auto">
-        <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center pb-6">
+        <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center pb-6 gap-2">
+          <LinkButton href="/">
+            Home
+          </LinkButton>
           <LinkButton
-            href="https://github.com/davidlpoole/merge-sort/blob/main/utils/factory.ts"
+            href="https://github.com/davidlpoole/challenges/blob/main/utils/factory.ts"
             target="_blank"
           >
             <img

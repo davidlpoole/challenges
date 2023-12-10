@@ -16,10 +16,10 @@ export default function TextInput(props: TextInputProps) {
   }
   return (
     <>
-      <form class="flex gap-2 py-6" onSubmit={(e) => handleSubmit(e)}>
+      <form class="grid gap-2 py-6" onSubmit={(e) => handleSubmit(e)}>
         <input
           id="addNumber"
-          class="px-2 py-1 border-gray-500 border-2 rounded bg-white hover:bg-gray-200 transition-colors"
+          class="px-2 py-1 border-gray-500 border-2 rounded bg-white hover:bg-gray-200 transition-colors w-40"
           type="number"
           placeholder={props.placeholder}
           required
@@ -28,7 +28,9 @@ export default function TextInput(props: TextInputProps) {
             props.text.value = (e.target as HTMLInputElement)?.value}
         >
         </input>
-        <Button>Add</Button>
+        <div class="flex justify-center">
+          <Button>Add</Button>
+        </div>
       </form>
     </>
   );
