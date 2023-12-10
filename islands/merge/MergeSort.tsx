@@ -1,5 +1,5 @@
 import { useSignal } from "@preact/signals";
-import TextInput from "../factory/TextInput.tsx";
+import TextInput from "../merge/TextInput.tsx";
 import List from "../../components/List.tsx";
 import mergeSort from "../../utils/sort.ts";
 

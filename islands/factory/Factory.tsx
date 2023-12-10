@@ -1,5 +1,5 @@
 import { useSignal } from "@preact/signals";
-import NewEmployee from "../merge/NewEmployee.tsx";
+import NewEmployee from "../factory/NewEmployee.tsx";
 import { Employee } from "../../types/Employee.ts";
 
 export default function Factory() {

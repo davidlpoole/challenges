@@ -48,7 +48,14 @@ export default function Home() {
         <div>
           <pre>
             <code class='text-gray-500'>
-              {`export default function createEmployee(
+              {
+`interface EmployeeData {
+  firstName: string;
+  lastName: string;
+  jobTitle: string;
+}
+
+function createEmployee(
   emp: EmployeeData,
   domain: string,
 ): Employee {
@@ -62,7 +69,11 @@ export default function Home() {
     fullName,
     email,
   };
-}`}
+}
+
+const employee = createEmployee(emp, "example.com");
+
+`}
             </code>
           </pre>
         </div>

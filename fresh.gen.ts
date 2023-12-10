@@ -8,9 +8,9 @@ import * as $factory_index from "./routes/factory/index.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $merge_index from "./routes/merge/index.tsx";
 import * as $factory_Factory from "./islands/factory/Factory.tsx";
-import * as $factory_TextInput from "./islands/factory/TextInput.tsx";
+import * as $factory_NewEmployee from "./islands/factory/NewEmployee.tsx";
 import * as $merge_MergeSort from "./islands/merge/MergeSort.tsx";
-import * as $merge_NewEmployee from "./islands/merge/NewEmployee.tsx";
+import * as $merge_TextInput from "./islands/merge/TextInput.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -23,9 +23,9 @@ const manifest = {
   },
   islands: {
     "./islands/factory/Factory.tsx": $factory_Factory,
-    "./islands/factory/TextInput.tsx": $factory_TextInput,
+    "./islands/factory/NewEmployee.tsx": $factory_NewEmployee,
     "./islands/merge/MergeSort.tsx": $merge_MergeSort,
-    "./islands/merge/NewEmployee.tsx": $merge_NewEmployee,
+    "./islands/merge/TextInput.tsx": $merge_TextInput,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
