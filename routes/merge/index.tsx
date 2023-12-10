@@ -39,7 +39,7 @@ export default function Home() {
             View full <strong>sort.ts</strong> on GitHub
           </LinkButton>
         </div>
-        <div>
+        <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
           <pre>
           <code class='text-gray-500'>
   {`export default function mergeSort(unsorted: number[]): number[] {
