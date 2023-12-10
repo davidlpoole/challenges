@@ -4,9 +4,12 @@
 
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
+import * as $factory_index from "./routes/factory/index.tsx";
 import * as $index from "./routes/index.tsx";
-import * as $Counter from "./islands/Counter.tsx";
+import * as $merge_index from "./routes/merge/index.tsx";
+import * as $Factory from "./islands/Factory.tsx";
 import * as $MergeSort from "./islands/MergeSort.tsx";
+import * as $NewEmployee from "./islands/NewEmployee.tsx";
 import * as $TextInput from "./islands/TextInput.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
@@ -14,11 +17,14 @@ const manifest = {
   routes: {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
+    "./routes/factory/index.tsx": $factory_index,
     "./routes/index.tsx": $index,
+    "./routes/merge/index.tsx": $merge_index,
   },
   islands: {
-    "./islands/Counter.tsx": $Counter,
+    "./islands/Factory.tsx": $Factory,
     "./islands/MergeSort.tsx": $MergeSort,
+    "./islands/NewEmployee.tsx": $NewEmployee,
     "./islands/TextInput.tsx": $TextInput,
   },
   baseUrl: import.meta.url,
