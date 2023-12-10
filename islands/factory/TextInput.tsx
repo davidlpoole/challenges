@@ -1,6 +1,6 @@
 import { h } from "https://esm.sh/preact@10.19.2";
 import type { Signal } from "@preact/signals";
-import { Button } from "../components/Button.tsx";
+import { Button } from "../../components/Button.tsx";
 
 interface TextInputProps {
   text: Signal<string>;

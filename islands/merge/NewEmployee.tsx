@@ -1,11 +1,11 @@
 import { h } from "https://esm.sh/preact@10.19.2";
 import type { Signal } from "@preact/signals";
 
-import { Button } from "../components/Button.tsx";
-import FormInput from "../components/FormInput.tsx";
+import { Button } from "../../components/Button.tsx";
+import FormInput from "../../components/FormInput.tsx";
 
-import createEmployee from "../utils/factory.ts";
-import { Employee, EmployeeData } from "../types/Employee.ts";
+import createEmployee from "../../utils/factory.ts";
+import { Employee, EmployeeData } from "../../types/Employee.ts";
 
 interface NewEmployeeProps {
   employees: Signal<Employee[]>;

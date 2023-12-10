@@ -1,7 +1,7 @@
 import { useSignal } from "@preact/signals";
-import TextInput from "./TextInput.tsx";
-import List from "../components/List.tsx";
-import mergeSort from "../utils/sort.ts";
+import TextInput from "../factory/TextInput.tsx";
+import List from "../../components/List.tsx";
+import mergeSort from "../../utils/sort.ts";
 
 export default function MergeSort() {
   const text = useSignal("");
