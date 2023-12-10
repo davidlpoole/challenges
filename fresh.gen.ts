@@ -7,10 +7,10 @@ import * as $_app from "./routes/_app.tsx";
 import * as $factory_index from "./routes/factory/index.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $merge_index from "./routes/merge/index.tsx";
-import * as $Factory from "./islands/Factory.tsx";
-import * as $MergeSort from "./islands/MergeSort.tsx";
-import * as $NewEmployee from "./islands/NewEmployee.tsx";
-import * as $TextInput from "./islands/TextInput.tsx";
+import * as $factory_Factory from "./islands/factory/Factory.tsx";
+import * as $factory_TextInput from "./islands/factory/TextInput.tsx";
+import * as $merge_MergeSort from "./islands/merge/MergeSort.tsx";
+import * as $merge_NewEmployee from "./islands/merge/NewEmployee.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -22,10 +22,10 @@ const manifest = {
     "./routes/merge/index.tsx": $merge_index,
   },
   islands: {
-    "./islands/Factory.tsx": $Factory,
-    "./islands/MergeSort.tsx": $MergeSort,
-    "./islands/NewEmployee.tsx": $NewEmployee,
-    "./islands/TextInput.tsx": $TextInput,
+    "./islands/factory/Factory.tsx": $factory_Factory,
+    "./islands/factory/TextInput.tsx": $factory_TextInput,
+    "./islands/merge/MergeSort.tsx": $merge_MergeSort,
+    "./islands/merge/NewEmployee.tsx": $merge_NewEmployee,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

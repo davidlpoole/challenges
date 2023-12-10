@@ -1,5 +1,5 @@
 import LinkButton from "../../components/LinkButton.tsx";
-import Factory from "../../islands/Factory.tsx";
+import Factory from "../../islands/factory/Factory.tsx";
 
 export default function Home() {
   return (
@@ -42,7 +42,7 @@ export default function Home() {
               height="20"
               alt="the GitHub logo: OctoCat"
             />
-            View code on GitHub
+            View full <strong>factory.ts</strong> on GitHub
           </LinkButton>
         </div>
         <div>

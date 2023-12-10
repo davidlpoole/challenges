@@ -1,6 +1,6 @@
 import { useSignal } from "@preact/signals";
-import NewEmployee from "./NewEmployee.tsx";
-import { Employee } from "../types/Employee.ts";
+import NewEmployee from "../merge/NewEmployee.tsx";
+import { Employee } from "../../types/Employee.ts";
 
 export default function Factory() {
   const employees = useSignal([] as Employee[]);

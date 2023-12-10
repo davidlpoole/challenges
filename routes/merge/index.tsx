@@ -1,4 +1,4 @@
-import MergeSort from "../../islands/MergeSort.tsx";
+import MergeSort from "../../islands/merge/MergeSort.tsx";
 import LinkButton from "../../components/LinkButton.tsx";
 
 export default function Home() {
@@ -36,7 +36,7 @@ export default function Home() {
               height="20"
               alt="the GitHub logo: OctoCat"
             />
-            View code on GitHub
+            View full <strong>sort.ts</strong> on GitHub
           </LinkButton>
         </div>
         <div>
