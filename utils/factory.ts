@@ -1,5 +1,4 @@
-import { Employee, EmployeeData } from "../islands/NewEmployee.tsx";
-
+import { Employee, EmployeeData } from "../types/Employee.ts";
 /**
  * Creates a new employee object with the given employee data and domain.
  *
