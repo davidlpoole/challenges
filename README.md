@@ -1,8 +1,14 @@
 # Merge Sort and Factory Function demo app
 
+A repo to host some coding challenges I've been set, and also just to play around with Deno/Fresh.
+
+### Stack
+
+Deno, Fresh, Preact, Tailwind CSS
+
 ### Usage
 
-Make sure to install Deno: https://deno.land/manual/getting_started/installation
+Install Deno: https://deno.land/manual/getting_started/installation
 
 Then start the project:
 
